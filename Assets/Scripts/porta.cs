@@ -22,3 +22,4 @@ public class porta : MonoBehaviour
         return cena;
     }
 }
+//em nome coloca o nome da Cena e em cena para onde ele vai

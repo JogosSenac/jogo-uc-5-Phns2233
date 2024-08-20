@@ -116,6 +116,7 @@ public class Player: MonoBehaviour
             if(other.gameObject.CompareTag("portal"))
             {
                 SceneManager.LoadScene(other.gameObject.GetComponent<porta>().NomeCena());
+                Destroy(this.gameObject);
             }
         }
             

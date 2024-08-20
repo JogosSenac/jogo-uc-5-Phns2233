@@ -9590,7 +9590,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66bd6f7385cdade499b80d74b97cbf47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nome: cavernaBoss
+  cena: SalaBoss
+  nome: Cavarna
   entrada: 1
 --- !u!1 &738252037
 GameObject:
@@ -137052,6 +137053,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1761037647099335780, guid: 615cef9162307454c885be499033c531,
+        type: 3}
+      propertyPath: velocidade
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2267569812209739443, guid: 615cef9162307454c885be499033c531,
         type: 3}
       propertyPath: m_SortingOrder
@@ -138934,7 +138940,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66bd6f7385cdade499b80d74b97cbf47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nome: caverna
+  cena: Caverna
+  nome: Caverna
   entrada: 0
 --- !u!1 &1693134478 stripped
 GameObject:
