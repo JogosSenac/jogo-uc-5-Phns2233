@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 315709a5b9bc56841a9c87e41432a863
+guid: 57611963ddfe9cd4d9c95a5a32d1d815
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 180
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -73,6 +73,19 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,10 +126,10 @@ TextureImporter:
       name: inimigotras_0
       rect:
         serializedVersion: 2
-        x: 1439
-        y: 4254
-        width: 576
-        height: 836
+        x: 45
+        y: 133
+        width: 18
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5d744ad5fc3fe84787ce09808a7da29
-      internalID: -851165739
+      spriteID: 6d7b2bf470478a24dacdda332b12014d
+      internalID: 162921914
       vertices: []
       indices: 
       edges: []
@@ -134,10 +147,10 @@ TextureImporter:
       name: inimigotras_1
       rect:
         serializedVersion: 2
-        x: 1437
-        y: 1154
-        width: 578
-        height: 831
+        x: 45
+        y: 36
+        width: 18
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20f0be7348e57d144be9d6e3c74d01bd
-      internalID: 1425833846
+      spriteID: 004025dddbab36c4f9a00f2c47342a71
+      internalID: -2127548486
       vertices: []
       indices: 
       edges: []
@@ -162,8 +175,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      inimigotras_0: -851165739
-      inimigotras_1: 1425833846
+      inimigotras_0: 162921914
+      inimigotras_1: -2127548486
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

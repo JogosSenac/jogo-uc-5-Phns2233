@@ -1,6 +1,6 @@
-using UnityEditor.SearchService;
+
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 
 public class Inimigo : MonoBehaviour
 {
@@ -42,6 +42,7 @@ public class Inimigo : MonoBehaviour
             {
                 isFollowing = false;
                 rb.velocity = Vector2.zero; // Para o movimento do inimigo
+                anim.SetLayerWeight(1,1);
             }
 
             if (player.position.x > transform.position.x )

@@ -1,7 +1,6 @@
-using UnityEditor.PackageManager;
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Video;
 
 public class Player: MonoBehaviour
 {

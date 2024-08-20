@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 088fe9efa488ebe42ba9f588a1826cc4
+guid: 44b5d7acaf304be43881ef50be6885b4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 180
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -73,6 +73,19 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,43 +123,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: inimigoFRente_0
+      name: inimigofrente_0
       rect:
         serializedVersion: 2
-        x: 1405
-        y: 4255
-        width: 611
-        height: 838
+        x: 44
+        y: 133
+        width: 19
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9939fadae60f41e438ebb6f3231af526
-      internalID: 1220967694
+      spriteID: 40f7c56dd6b45e94a9202bb9c735f321
+      internalID: 1949026287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: inimigoFRente_1
+      name: inimigofrente_1
       rect:
         serializedVersion: 2
-        x: 1409
-        y: 1152
-        width: 609
-        height: 833
+        x: 44
+        y: 36
+        width: 19
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e330dc1ad228db140b78ab15a6fea86c
-      internalID: -1988848039
+      spriteID: 1a106d717d70ae941a016d32e90e81c4
+      internalID: -1624894103
       vertices: []
       indices: 
       edges: []
@@ -162,8 +175,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      inimigoFRente_0: 1220967694
-      inimigoFRente_1: -1988848039
+      inimigofrente_0: 1949026287
+      inimigofrente_1: -1624894103
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
