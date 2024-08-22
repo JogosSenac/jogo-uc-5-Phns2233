@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SalaBoss.unity
     guid: 74072842a1d24434eb929f8bc6e6d680
+  - enabled: 1
+    path: Assets/Scenes/morte.unity
+    guid: e32f5c9814f1a654182985a9a09b1c9f
   m_configObjects: {}

@@ -78,6 +78,12 @@ public class Player: MonoBehaviour
             anim.SetLayerWeight(2,0);
             anim.SetLayerWeight(3,0);
         }
+        if (this.CompareTag("slime")) // Verifica se o objeto que colidiu Ã© o jogador
+        {
+            this.CompareTag("Player");
+            Destroy(this.gameObject);
+            SceneManager.LoadScene("morte");
+        }
         
         
         
@@ -124,6 +130,12 @@ public class Player: MonoBehaviour
                 nomePorta = other.gameObject.GetComponent<porta>().NomePortal();
                 entrada = other.gameObject.GetComponent<porta>().EntradaOuSaida();
             }
+             if (other.CompareTag("Player")) // Verifica se o objeto que colidiu Ã© o jogador
+        {
+                other.CompareTag("Player");
+                Destroy(other.gameObject);
+                SceneManager.LoadScene("morte"); // Carrega a cena especificada
+        }
         }
         
         private void OnTriggerStay2D(Collider2D other) 
@@ -133,10 +145,13 @@ public class Player: MonoBehaviour
                 SceneManager.LoadScene(other.gameObject.GetComponent<porta>().NomeCena());
                 Destroy(this.gameObject);
             }
-
+            
         }
-         
-    }
+
+    
+}
+
+
 
  
 

@@ -16,4 +16,8 @@ public class menu : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
+     public void Sair()
+   {
+      Application.Quit();
+   }
 }

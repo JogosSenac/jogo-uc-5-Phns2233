@@ -137099,6 +137099,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1761037647099335780, guid: 615cef9162307454c885be499033c531,
         type: 3}
+      propertyPath: entrada
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761037647099335780, guid: 615cef9162307454c885be499033c531,
+        type: 3}
+      propertyPath: nomePorta
+      value: morte
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761037647099335780, guid: 615cef9162307454c885be499033c531,
+        type: 3}
       propertyPath: velocidade
       value: 5
       objectReference: {fileID: 0}
@@ -139705,11 +139715,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3701807115672343666, guid: ce22f32c80a53274c99214d0d2974e08,
+        type: 3}
+      propertyPath: m_TagString
+      value: slime
+      objectReference: {fileID: 0}
     - target: {fileID: 991692769714369406, guid: ce22f32c80a53274c99214d0d2974e08,
         type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1693134492}
+    - target: {fileID: 2428164069234137681, guid: ce22f32c80a53274c99214d0d2974e08,
+        type: 3}
+      propertyPath: m_TagString
+      value: slime
+      objectReference: {fileID: 0}
     - target: {fileID: 2826892688775323312, guid: ce22f32c80a53274c99214d0d2974e08,
         type: 3}
       propertyPath: player
@@ -139775,11 +139795,21 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1693134492}
+    - target: {fileID: 7019148113133765455, guid: ce22f32c80a53274c99214d0d2974e08,
+        type: 3}
+      propertyPath: m_TagString
+      value: slime
+      objectReference: {fileID: 0}
     - target: {fileID: 7481525198029618849, guid: ce22f32c80a53274c99214d0d2974e08,
         type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1693134492}
+    - target: {fileID: 7946503977608367469, guid: ce22f32c80a53274c99214d0d2974e08,
+        type: 3}
+      propertyPath: m_TagString
+      value: slime
+      objectReference: {fileID: 0}
     - target: {fileID: 8987266043037000871, guid: ce22f32c80a53274c99214d0d2974e08,
         type: 3}
       propertyPath: m_Name
