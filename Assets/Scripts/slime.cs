@@ -30,12 +30,13 @@ public class slime : MonoBehaviour
             // Move o inimigo na direção calculada
             rb.velocity = moveDirection * moveSpeed;
 
-           /* // Ajusta a rotação do inimigo para olhar na direção do movimento
+            // Ajusta a rotação do inimigo para olhar na direção do movimento
            if (moveDirection != Vector2.one)
             {
-                float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
+                float angle = Mathf.Atan2(moveDirection.x, moveDirection.x) * Mathf.Rad2Deg;
                 transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-            }*/
+
+            }
 
             // Verifica se o inimigo está próximo o suficiente para parar de seguir
             if (Vector2.Distance(transform.position, player.position) <= stopDistance)
@@ -43,17 +44,18 @@ public class slime : MonoBehaviour
                 isFollowing = false;
                 rb.velocity = Vector2.zero; // Para o movimento do inimigo
                 anim.SetLayerWeight(1,1);
+                spriteR.flipY = true;
             }
 
             if (player.position.x > transform.position.x )
             {
-              //anim.SetLayerWeight(0,1);
-              //spriteR.flipY = false;
+              anim.SetLayerWeight(1,1);
+              spriteR.flipY = false;
             }
             else if(player.position.x < transform.position.x)
             {
-                //anim.SetLayerWeight(0,1);
-                //spriteR.flipY = true;
+                anim.SetLayerWeight(1,1);
+                spriteR.flipY = true;
             }
             if(this.gameObject.CompareTag("Player"))
             {

@@ -30,7 +30,7 @@ public class Player: MonoBehaviour
     }
 
     private void FixedUpdate() {
-         MoveH = Input.GetAxis("Horizontal");
+        MoveH = Input.GetAxis("Horizontal");
         moveV = Input.GetAxis("Vertical");
         transform.position += new Vector3(MoveH * velocidade * Time.deltaTime,moveV * velocidade * Time.deltaTime,0);
     }
@@ -40,30 +40,42 @@ public class Player: MonoBehaviour
     {
        
 
-        if(Input.GetKeyDown(KeyCode.W) )
+        if(Input.GetKeyDown(KeyCode.W)  )
         {
             anim.SetLayerWeight(2,1);
+            anim.SetLayerWeight(3,0);
         }
-        if(Input.GetKeyDown(KeyCode.S))
+        if(Input.GetKeyDown(KeyCode.S)  )
         {   
             anim.SetLayerWeight(1,1);
+            anim.SetLayerWeight(3,0);
         }
         if(Input.GetKeyDown(KeyCode.A))
         {
             sprite.flipX = false;
+            anim.SetLayerWeight(3,1);
             anim.SetLayerWeight(1,0);
+            anim.SetLayerWeight(2,0);
         }
         if(Input.GetKeyDown(KeyCode.D))
         {
             sprite.flipX = true;
+            anim.SetLayerWeight(3,1);
             anim.SetLayerWeight(1,0);
-        }
-        if(moveH == 0 && moveV == 0 )
-        {
             anim.SetLayerWeight(2,0);
-            anim.SetLayerWeight(1,0);
-            anim.SetLayerWeight(0,1);
         }
+        if(Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            anim.SetLayerWeight(1,1);
+        }
+        if(moveH == 0 && moveV == 0)
+        {
+            anim.SetLayerWeight(0,1);
+            anim.SetLayerWeight(1,0);
+            anim.SetLayerWeight(2,0);
+            anim.SetLayerWeight(3,0);
+        }
+        
         
     }
         public int VidasdoPlayer()

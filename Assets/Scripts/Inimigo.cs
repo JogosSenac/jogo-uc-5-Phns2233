@@ -42,17 +42,17 @@ public class Inimigo : MonoBehaviour
             {
                 isFollowing = false;
                 rb.velocity = Vector2.zero; // Para o movimento do inimigo
-                anim.SetLayerWeight(1,1);
+               // anim.SetLayerWeight(1,1);
             }
 
             if (player.position.x > transform.position.x )
             {
-              anim.SetLayerWeight(0,1);
+              //anim.SetLayerWeight(0,1);
               //spriteR.flipY = false;
             }
             else if(player.position.x < transform.position.x)
             {
-                anim.SetLayerWeight(0,1);
+                //anim.SetLayerWeight(0,1);
                 //spriteR.flipY = true;
             }
             if(this.gameObject.CompareTag("Player"))
