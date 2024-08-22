@@ -10,6 +10,12 @@ public class Vale : MonoBehaviour
         {
               SceneManager.LoadScene("Caverna");
         }
+
+
+        if (other.gameObject.CompareTag("Player"))
+        {
+            SceneManager.LoadScene("Menu");
+        }
     }
 
 }

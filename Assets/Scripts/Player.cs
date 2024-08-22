@@ -1,4 +1,5 @@
 
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,12 +12,14 @@ public class Player: MonoBehaviour
     public int vidas = 3;
     public bool comVida = true;
     public int dano = 30;
+    public int danoSlime = 10;
     public int vida = 100;
     private Rigidbody2D rb;
     public Animator anim;
     public SpriteRenderer sprite;
     public string nomePorta;
     public bool entrada;
+    public bool Dano = false;
 
     public global::System.Single MoveH { get => moveH; set => moveH = value; }
 
@@ -77,6 +80,7 @@ public class Player: MonoBehaviour
         }
         
         
+        
     }
         public int VidasdoPlayer()
         {
@@ -129,8 +133,9 @@ public class Player: MonoBehaviour
                 SceneManager.LoadScene(other.gameObject.GetComponent<porta>().NomeCena());
                 Destroy(this.gameObject);
             }
+
         }
-            
+         
     }
 
  

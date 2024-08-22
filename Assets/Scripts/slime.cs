@@ -12,6 +12,7 @@ public class slime : MonoBehaviour
     public Animator anim;
     private bool isFollowing = true; // Variável de controle do estado de seguir
     private Rigidbody2D rb;
+    public int dano = 10;
 
     void Start()
     {
@@ -64,11 +65,5 @@ public class slime : MonoBehaviour
         }
     }
 
-   /*     private void OnTriggerEnter2D(Collider2D other) 
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            SceneManager.LoadScene("batalha");
-        }
-    }*/
+    
 }
