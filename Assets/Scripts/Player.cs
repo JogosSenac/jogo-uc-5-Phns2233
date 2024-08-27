@@ -2,6 +2,7 @@
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player: MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class Player: MonoBehaviour
     public bool comVida = true;
     public int dano = 30;
     public int danoSlime = 10;
-    public int vida = 100;
+    public int vidaPlayer = 100;
     private Rigidbody2D rb;
     public Animator anim;
     public SpriteRenderer sprite;
@@ -78,49 +79,13 @@ public class Player: MonoBehaviour
             anim.SetLayerWeight(2,0);
             anim.SetLayerWeight(3,0);
         }
-        if (this.CompareTag("slime")) // Verifica se o objeto que colidiu Ã© o jogador
+        if (this.CompareTag("Player")) // Verifica se o objeto que colidiu Ã© o jogador
         {
-            this.CompareTag("Player");
-            Destroy(this.gameObject);
-            SceneManager.LoadScene("morte");
+            this.CompareTag("slime");
+            CompareTag("buton1");
         }
-        
-        
-        
+        //
     }
-        public int VidasdoPlayer()
-        {
-            return vidas;
-        }
-        private void PerdeVida()
-        {
-            if(vida > 0)
-            {
-                vidas --;
-                vida = 100;
-            }
-            else if (vida == 0)
-            {
-                comVida = false;
-            }
-        }
-        public bool VerificaSeplayerVivo()
-        {
-            return comVida;
-        }
-        
-        private void PerdVida()
-        {
-            if(vida > 0)
-            {
-                vidas --;
-                vida = 100;
-            }
-            else if (vida == 0)
-            {
-                comVida = false;
-            }
-        }
 
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -148,6 +113,15 @@ public class Player: MonoBehaviour
             
         }
 
+        public void tomarDano(int danoSlime)
+        {
+            vidaPlayer -= danoSlime;
+            if (vidaPlayer > 0)
+            {
+              
+
+            }
+        }
     
 }
 

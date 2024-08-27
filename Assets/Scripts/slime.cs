@@ -1,4 +1,5 @@
 
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -12,8 +13,7 @@ public class slime : MonoBehaviour
     public Animator anim;
     private bool isFollowing = true; // Variável de controle do estado de seguir
     private Rigidbody2D rb;
-    public int dano = 10;
-
+    private int danoSlime = 10;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -58,7 +58,7 @@ public class slime : MonoBehaviour
                 anim.SetLayerWeight(1,1);
                 spriteR.flipY = true;
             }
-            if(this.gameObject.CompareTag("Player"))
+            if(this.CompareTag("Player"))
             {
                 Destroy(this.gameObject);
             }
